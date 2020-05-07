@@ -37,7 +37,7 @@ public class route extends AppCompatActivity {
            }
                if(mdestination.equals("Dilli Hat-INA")){
                    if((a+s+p)<(a+r+b+q+o)){
-                       textView.setText("Shortest route from " + msource + " to " + mdestination + " will take " + (a + s+p) + "minutes");
+                       textView.setText("Shortest route from " + msource + " to " + mdestination + " will take " + (a + s +p) + "minutes");
                    }
                    else{
                        textView.setText("Shortest route from " + msource + " to " + mdestination + " will take " + (a +r+b+q+o) + "minutes");
@@ -62,8 +62,5 @@ public class route extends AppCompatActivity {
                            textView.setText("Shortest route from " + msource + " to " + mdestination + " will take " + (a+b+r+q+l+m) + "minutes");
                        }
                    }
-
-
-
-    }
+       }
 }}
