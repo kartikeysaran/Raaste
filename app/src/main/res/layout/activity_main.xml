@@ -34,6 +34,13 @@
         android:scaleType="centerCrop"
         android:src="@drawable/dmr"
         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Enter the source staion below to get the shortest route between all other metro staions to reach in least possible time"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"/>
 
 
 
@@ -43,26 +50,17 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:padding="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/customdesign"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:hint="Enter Source Station"
          />
 
-    <AutoCompleteTextView
-        android:id="@+id/autoCompleteTextView3"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:padding="20dp"
-        android:layout_marginTop="60dp"
-        android:hint="Enter Destination Station"
-        android:background="@drawable/customdesign"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-       />
+
     <ImageView
-        android:layout_marginTop="100dp"
+
+        android:layout_marginTop="120dp"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:src="@drawable/dmrclogo"/>

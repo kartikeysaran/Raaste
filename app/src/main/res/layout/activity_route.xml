@@ -1,30 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".route">
+    tools:context=".route"
+    android:background="#5D1049"
+    >
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="343dp"
-        android:layout_height="158dp"
-        android:layout_marginTop="34dp"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="315dp"
-        android:layout_height="414dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custombutton"
+                android:src="@drawable/back"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/back"
+
+
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custombutton"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:text="View Delhi Metro Map"
+                android:id="@+id/map"
+                android:layout_marginLeft="20dp"
+                android:onClick="showmap"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custombutton"
+                android:src="@drawable/info"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:id="@+id/info"
+                android:layout_marginLeft="105dp"
+                android:onClick="showinfo"
+                />
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:background="@drawable/customdesign"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+
+                />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   The Station Codes are as follows \n 0- New Delhi \n 1- Rajiv Chowk \n 2- Central Secretiat \n 3- Dilli Haat INA \n 4- Hauj kHas \n 5-Kalkaji Mandir \n 6-Lajpatnagar \n 7- Mandi House \n 8- Yamuna Bank \n 9-Mayur Vihar Phase 1 \n 10- Botanical Garden \n 11- KarkarDumba \n 12- Anand Vihar \n 13- Vaishali\n"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/customdesign"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            />
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
